@@ -1,0 +1,25 @@
+.products-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 18px 0 10px;
+  border-top: 1px solid $layout-color;
+  position: relative;
+
+  &__title {
+    position: absolute;
+    top: -12px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    width: 215px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  & > .btn {
+    margin-top: 53px;
+    margin-bottom: 50px;
+  }
+}

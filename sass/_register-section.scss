@@ -1,6 +1,7 @@
 .register-section {
   padding: 0 16px;
-  margin-top: 29px;
+  margin: 29px auto 0 auto;
+  max-width: $mobile-max-width;
 
   &__title {
     font-size: 1.25rem;
@@ -22,7 +23,7 @@
     margin-top: 20px;
   }
 
-  .radio-wrapper {
+  .radio {
     margin-right: 40px;
   }
 }

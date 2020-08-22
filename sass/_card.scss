@@ -1,0 +1,48 @@
+.card {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  max-width: $mobile-max-width;
+
+  &__img {
+    width: 169px;
+    height: 129px;
+    margin-right: 23px;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    display: none;
+    font-size: 0.75rem;
+  }
+
+  &__current-price {
+    font-weight: bold;
+  }
+
+  &__old-price {
+    font-size: 0.75rem;
+  }
+
+  &__installment-price {
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    margin-top: 6px;
+  }
+
+  p {
+    margin: 4px 0;
+  }
+}

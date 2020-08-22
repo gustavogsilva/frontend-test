@@ -5,6 +5,11 @@
   padding: 0 16px;
   height: 400px;
 
+  &__wrapper {
+    max-width: $mobile-max-width;
+    margin: 0 auto;
+  }
+
   &__background {
     position: absolute;
     left: 0;
