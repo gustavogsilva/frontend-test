@@ -1,9 +1,10 @@
 @import "./variables";
 @import "./base";
-@import "./btn";
-@import "./header";
-@import "./input";
-@import "./radio";
-@import "./register-section";
-@import "./card";
-@import "./products-section";
+@import "./components/btn";
+@import "./sections/header";
+@import "./components/input";
+@import "./components/radio";
+@import "./sections/register-section";
+@import "./components/card";
+@import "./sections/products-section";
+@import "./sections/share-section";

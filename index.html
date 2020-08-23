@@ -46,14 +46,18 @@
             ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra.
           </p>
           <form class="register-section__form" action="">
-            <label for="name">Seu nome:</label>
-            <input id="name" class="input" name="name" type="text" />
-
-            <label for="email">E-mail:</label>
-            <input id="email" class="input" name="email" type="text" />
-
-            <label for="cpf">CPF:</label>
-            <input id="cpf" class="input" name="cpf" type="text" />
+            <div class="input">
+              <label for="name">Seu nome:</label>
+              <input id="name" name="name" type="text" />
+            </div>
+            <div class="input">
+              <label for="email">E-mail:</label>
+              <input id="email" name="email" type="text" />
+            </div>
+            <div class="input">
+              <label for="cpf">CPF:</label>
+              <input id="cpf" name="cpf" type="text" />
+            </div>
             <div>
               <div class="radio">
                 <input type="radio" id="male" name="gender" value="male" />
@@ -110,6 +114,25 @@
           </div>
         </div>
         <button type="button" class="btn btn--large">Ainda mais produtos aqui!</button>
+      </section>
+      <section class="share-section">
+        <h2 class="share-section__title">Compartilhe a novidade</h2>
+        <div class="share-section__wrapper">
+          <p class="share-section__text">
+            Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
+          </p>
+          <form class="share-section__form" action="">
+            <div class="input">
+              <label for="friend-name">Nome do seu amigo:</label>
+              <input id="friend-name" name="friend-name" type="text" />
+            </div>
+            <div class="input">
+              <label for="friend-email">E-mail dele:</label>
+              <input id="friend-email" name="friend-email" type="text" />
+            </div>
+            <button type="submit" class="btn btn--large">Enviar agora</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer></footer>

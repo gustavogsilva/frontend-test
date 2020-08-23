@@ -1,0 +1,41 @@
+.share-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-top: 1px solid $layout-color;
+  padding: 0 16px;
+  margin-top: 140px;
+
+  &__wrapper {
+    max-width: $mobile-max-width;
+  }
+
+  &__title {
+    position: absolute;
+    top: -12px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    width: 215px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 38px 0 28px 0;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    margin: 22px auto 85px auto;
+  }
+}
