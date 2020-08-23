@@ -1,11 +1,25 @@
 .products-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include center;
+  flex-flow: column;
   padding: 0 16px;
-  border-top: 1px solid $layout-color;
   position: relative;
+
+  &__wrapper {
+    @include center;
+    flex-direction: column;
+    border-top: 1px solid $layout-color;
+    max-width: $desktop-container;
+    width: 100%;
+    @media (min-width: 770px) {
+      flex-flow: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-top: 20px;
+    }
+    @media (min-width: 850px) {
+      justify-content: space-between;
+    }
+  }
 
   &__title {
     position: absolute;

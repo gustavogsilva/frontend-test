@@ -3,11 +3,21 @@
   margin-top: 30px;
   width: 100%;
   max-width: $mobile-container;
+  @media (min-width: 770px) {
+    flex-flow: column;
+    width: 200px;
+    margin: 40px 2px 0 2px;
+  }
 
   &__img {
     width: 169px;
     height: 129px;
     margin-right: 23px;
+    @media (min-width: 770px) {
+      width: 200px;
+      height: 150px;
+      margin-bottom: 14px;
+    }
   }
 
   &__data {
@@ -24,6 +34,9 @@
   &__description {
     display: none;
     font-size: 0.75rem;
+    @media (min-width: 770px) {
+      display: block;
+    }
   }
 
   &__current-price {

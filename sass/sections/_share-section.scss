@@ -1,8 +1,6 @@
 .share-section {
-  display: flex;
+  @include center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
   border-top: 1px solid $layout-color;
   padding: 0 16px;
