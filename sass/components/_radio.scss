@@ -10,6 +10,7 @@ $radio-color2: $layout-color;
     margin: 0;
     + label {
       font-size: 0.75rem;
+      cursor: pointer;
       &:before {
         content: "";
         background: $radio-color1;
