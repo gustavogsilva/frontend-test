@@ -13,6 +13,8 @@
     width: 169px;
     height: 129px;
     margin-right: 23px;
+    object-fit: scale-down;
+    border: 1px solid $layout-color;
     @media (min-width: 770px) {
       width: 200px;
       height: 150px;
