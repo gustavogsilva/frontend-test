@@ -1,10 +1,17 @@
 .register-section {
   padding: 0 16px;
   margin: 29px auto 0 auto;
-  max-width: $mobile-max-width;
+  max-width: $mobile-container;
+  @media (min-width: 770px) {
+    display: flex;
+    max-width: $desktop-container;
+  }
 
   &__title {
     font-size: 1.25rem;
+    @media (min-width: 770px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__text {
@@ -16,6 +23,11 @@
     display: flex;
     flex-direction: column;
     margin: 30px 0 90px 0;
+    @media (min-width: 770px) {
+      width: 340px;
+      flex: 0 0 auto;
+      margin: 0 0 91px 60px;
+    }
   }
 
   &__form .btn {

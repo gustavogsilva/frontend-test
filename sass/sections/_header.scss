@@ -6,8 +6,11 @@
   height: 400px;
 
   &__wrapper {
-    max-width: $mobile-max-width;
+    max-width: $mobile-container;
     margin: 0 auto;
+    @media (min-width: 770px) {
+      max-width: $desktop-container;
+    }
   }
 
   &__background {
@@ -24,6 +27,9 @@
     background-color: transparent;
     font-size: 1.25rem;
     padding-top: 66px;
+    @media (min-width: 770px) {
+      text-align: center;
+    }
   }
 
   &__bold-title {
@@ -39,6 +45,10 @@
     font-size: 0.875rem;
     margin-top: 10px;
     margin-bottom: 56px;
+    @media (min-width: 770px) {
+      text-align: center;
+      margin: 24px 0 50px 0;
+    }
   }
 }
 
