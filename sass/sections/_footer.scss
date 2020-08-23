@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 157px;
+  background-color: $layout-color;
+  position: relative;
+
+  &__text {
+    text-align: center;
+    color: $font-color1;
+    margin-top: 71px;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+
+  &__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to bottom right, #fff calc(50% - 1px), $layout-color 50%);
+  }
+}
