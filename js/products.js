@@ -10,6 +10,16 @@ const Products = (function () {
   };
 
   /*
+   * Sets the products grid to the loading state or not
+   * @param {Boolean} boolean - True for enable loading, False for disable loading.
+   */
+  const loading = boolean => {
+    const moreProductsBtn = document.querySelector("#moreProductsBtn");
+    if (boolean) moreProductsBtn.innerHTML = '<div class="spinner"></div>';
+    if (!boolean) moreProductsBtn.innerHTML = "Ainda mais produtos aqui!";
+  };
+
+  /*
    * Converts a number to a string of two decimal places separated by comma
    * @param {Number} price - Number to be converted
    */
@@ -81,11 +91,14 @@ const Products = (function () {
    */
   const renderNextPage = async url => {
     try {
+      loading(true);
       const { products, nextPage } = await getProducts(url);
       renderProducts(products);
       nextPageUrl = nextPage;
     } catch (error) {
       alert("Ocorreu um problema ao tentar carregar a lista de produtos.");
+    } finally {
+      loading(false);
     }
   };
 
