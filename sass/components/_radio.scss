@@ -1,10 +1,21 @@
 $radio-color1: #fff;
 $radio-color2: $layout-color;
 
+.radio-wrapper {
+  position: relative;
+}
+
 .radio {
   display: inline-flex;
   align-items: center;
   &.is-invalid {
+    &::before {
+      content: "Selecione uma opção";
+      position: absolute;
+      font-size: 0.625rem;
+      color: red;
+      bottom: -13px;
+    }
     label {
       color: red;
       &::before {

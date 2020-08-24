@@ -1,5 +1,6 @@
 .input {
   margin-bottom: 20px;
+  position: relative;
 
   label {
     font-size: 0.75rem;
@@ -19,6 +20,13 @@
     input {
       color: red;
       border: 1px solid red;
+    }
+    &::before {
+      content: "Insira um valor válido para o campo";
+      position: absolute;
+      font-size: 0.625rem;
+      color: red;
+      bottom: -13px;
     }
   }
 }
