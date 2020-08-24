@@ -3,6 +3,10 @@ const Products = (function () {
     return fetch(`https://${url}`).then(response => response.json());
   };
 
+  /*
+   * Converts a number to a string of two decimal places separated by comma
+   * @param {Number} price - Number to be converted
+   */
   const formatsPrice = price => {
     let priceString = String(price).replace(".", ",");
     if (!priceString.includes(",")) return priceString + ",00";
@@ -10,6 +14,10 @@ const Products = (function () {
     return priceString.slice(0, priceString.search(",") + 3);
   };
 
+  /*
+   * Render an array of products
+   * @param {Array} products - Array of products to be rendered
+   */
   const renderProducts = products => {
     products.forEach(product => {
       const { name, image, oldPrice, price, description, installments } = product;
@@ -61,10 +69,18 @@ const Products = (function () {
     });
   };
 
+  /*
+   * Render the next page of products and save the nextPage value returned by the API in a global variable.
+   * @param {String} url - Url of the next page to be rendered
+   */
   const renderNextPage = async url => {
-    const { products, nextPage } = await getProducts(url);
-    renderProducts(products);
-    nextPageUrl = nextPage;
+    try {
+      const { products, nextPage } = await getProducts(url);
+      renderProducts(products);
+      nextPageUrl = nextPage;
+    } catch (error) {
+      alert("Ocorreu um problema ao tentar carregar a lista de produtos.");
+    }
   };
 
   // Exposed modules
