@@ -47,7 +47,11 @@
             ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra.
           </p>
         </div>
-        <form class="register-section__form" action="">
+        <form
+          class="register-section__form"
+          action="javascript:alert('Formulário enviado com sucesso!')"
+          onsubmit="return Validate.registerForm()"
+        >
           <div class="input">
             <label for="name">Seu nome:</label>
             <input id="name" name="name" type="text" />
@@ -70,7 +74,7 @@
               <label for="female" for="female">Feminino</label>
             </div>
           </div>
-          <button class="btn btn--w100" type="submit" onclick="Validate.registerForm(event)">Enviar</button>
+          <button class="btn btn--w100" type="submit">Enviar</button>
         </form>
       </section>
       <section class="products-section">
@@ -86,7 +90,11 @@
           <p class="share-section__text">
             Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
           </p>
-          <form class="share-section__form" action="">
+          <form
+            class="share-section__form"
+            action="javascript:alert('Formulário enviado com sucesso!')"
+            onsubmit="return Validate.shareForm()"
+          >
             <div class="share-section__form__wrapper">
               <div class="input">
                 <label for="friend-name">Nome do seu amigo:</label>
@@ -112,6 +120,7 @@
       </p>
       <div class="footer__background"></div>
     </footer>
-    <script src="/js/script.js"></script>
+    <script src="/js/products.js"></script>
+    <script src="/js/validate.js"></script>
   </body>
 </html>

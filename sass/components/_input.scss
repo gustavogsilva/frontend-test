@@ -11,4 +11,14 @@
     margin-top: 7px;
     border: 1px solid $layout-color;
   }
+
+  &.is-invalid {
+    label {
+      color: red;
+    }
+    input {
+      color: red;
+      border: 1px solid red;
+    }
+  }
 }

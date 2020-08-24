@@ -1,3 +1,9 @@
+/*
+ * @module Products - Module for handle Products
+ *
+ * @method renderNextPage - Render the next page of products in the product grid
+ */
+
 const Products = (function () {
   const getProducts = url => {
     return fetch(`https://${url}`).then(response => response.json());
@@ -83,12 +89,11 @@ const Products = (function () {
     }
   };
 
-  // Exposed modules
+  // Exposed methods
   return {
     renderNextPage
   };
 })();
 
 let nextPageUrl = "frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1";
-
 Products.renderNextPage(nextPageUrl);
