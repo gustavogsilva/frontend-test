@@ -19,19 +19,19 @@
         </h2>
         <div class="menu">
           <div class="menu__row">
-            <button type="button" class="btn btn--medium btn--shadow">Conheça a Linx</button>
-            <button type="button" class="btn btn--medium btn--shadow">Ajude o algorítimo</button>
+            <a href="https://www.linx.com.br/" target="_blank" class="btn btn--medium btn--shadow">Conheça a Linx</a>
+            <a href="#register-section" class="btn btn--medium btn--shadow">Ajude o algorítimo</a>
           </div>
           <div class="menu__row">
-            <button type="button" class="btn btn--medium">Seus produtos</button>
-            <button type="button" class="btn btn--medium">Compartilhe</button>
+            <a href="#products-section" class="btn btn--medium">Seus produtos</a>
+            <a href="#share-section" class="btn btn--medium">Compartilhe</a>
           </div>
         </div>
         <div class="header__background"></div>
       </div>
     </header>
     <main>
-      <section class="register-section">
+      <section id="register-section" class="register-section">
         <div>
           <h2 class="register-section__title">Ajude o algorítimo a ser mais certeiro</h2>
           <p class="register-section__text">
@@ -77,14 +77,14 @@
           <button class="btn btn--w100" type="submit">Enviar</button>
         </form>
       </section>
-      <section class="products-section">
+      <section id="products-section" class="products-section">
         <h2 class="products-section__title">Sua seleção especial</h2>
         <div class="products-section__wrapper"></div>
         <button type="button" class="btn btn--large" onclick="Products.renderNextPage(nextPageUrl)">
           Ainda mais produtos aqui!
         </button>
       </section>
-      <section class="share-section">
+      <section id="share-section" class="share-section">
         <h2 class="share-section__title">Compartilhe a novidade</h2>
         <div class="share-section__wrapper">
           <p class="share-section__text">
