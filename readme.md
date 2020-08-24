@@ -8,7 +8,7 @@ This project is the resolution of a front-end challenge that consists of creatin
 - By clicking the button "Ainda mais produtos aqui!" the next page of the API must be consulted, generating 8 more products in the existing grid, below the products already loaded by the first requisition;
 - The newsletter form with the title "Compartilhe a novidade" must have its input fields validated according to the content (ex: The email field must contain a valid email);
 
-### Run the app
+### To run the app
 
 - [Live preview](https://linx-gustavo.herokuapp.com/)
 - To run locally just execute the index.html in a browser.
