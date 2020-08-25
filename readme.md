@@ -4,6 +4,7 @@ This project is the resolution of a front-end challenge that consists of creatin
 
 ### Rules
 
+- Do not use frameworks;
 - For each product returned by the API, a product card with the respective information must be created in the product grid;
 - By clicking the button "Ainda mais produtos aqui!" the next page of the API must be consulted, generating 8 more products in the existing grid, below the products already loaded by the first requisition;
 - The newsletter form with the title "Compartilhe a novidade" must have its input fields validated according to the content (ex: The email field must contain a valid email);
